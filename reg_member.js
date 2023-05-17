@@ -2,7 +2,7 @@ var form;
 var sign_in ;
 var ID;
 var PSWD;
-var PSWD_again;
+var PSWD_again ;
 var namee;
 var email;
 var birthday ;
@@ -67,26 +67,29 @@ function submit() {
     let id_valid; let pswd_valid; let name_valid; let email_valid; let pswdinput_valid;
 
     // console.log(data);
-    if (ID.value.length < 4 || ID.value.length > 12) {
-        alert("ID 4글자 이상 12글자 이하!");
-    } else {id_valid = true;}  console.log(id_valid);
-       
-    if (PSWD.value.length < 4 || PSWD.value.length > 12) {         
-        alert("PSWD 4글자 이상 12글자 이하!");
-    } else {pswd_valid = true;}  console.log(pswd_valid);
+    while (true) {
+        if (ID.value.length < 4 || ID.value.length > 12) {
+            alert("ID 4글자 이상 12글자 이하!"); ID.focus(); break;
+        } else { id_valid = true; } 
 
-    if (namee.value.length < 4 || namee.value.length > 12) {         
-        alert("name 4글자 이상 12글자 이하!");
-    } else {name_valid = true;}  console.log(name_valid);
+        if (PSWD.value.length < 4 || PSWD.value.length > 12) {
+            alert("PSWD 4글자 이상 12글자 이하!"); PSWD.focus();break;
+        } else { pswd_valid = true; } 
 
-    if (email.value.length < 4 || email.value.length > 12) {         
-        alert("email 4글자 이상 12글자 이하!");
-    } else {email_valid = true;}  console.log(email_valid);
+        if (PSWD.value != PSWD_again.value) {
+            alert("암호 재입력 불일치"); PSWD_again.focus();break;
+        } else { pswdinput_valid = true; } 
 
-    if (PSWD.value != PSWD_again.value)
-       { alert("암호 재입력 불일치");
-    } else {pswdinput_valid= true;} console.log(pswdinput_valid);
+        if (namee.value.length < 4 || namee.value.length > 12) {
+            alert("이름 4글자 이상 12글자 이하!"); namee.focus();break;
+        } else { name_valid = true; } 
 
+        if (email.value.length < 4 || email.value.length > 12) {
+            alert("이메일 4글자 이상 12글자 이하!"); email.focus();break;
+        } else { email_valid = true; } 
+        break;
+    }
+    
     let gender_chk;
     for(let chk of gender){
         if(chk.checked == true){ gender_chk = chk.value }
