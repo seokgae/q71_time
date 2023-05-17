@@ -27,3 +27,9 @@ p {
 #phone_mid, #phone_end {
     width: 80px;
 }
+
+span + span {
+    margin : 5px;
+    font-size: 14px;
+}
+
