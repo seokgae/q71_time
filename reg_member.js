@@ -106,7 +106,7 @@ function submit() {
             패스워드: ${PSWD.value}
             이름: ${namee.value}
             이메일: ${email.value}
-            이름: ${birthday.value}
+            생년월일: ${birthday.value}
             전화번호: ${phone_frontid.value} - ${phone_mid.value} - ${phone_end.value}
             성별: ${gender_chk}         
             `
