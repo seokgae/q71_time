@@ -12,6 +12,14 @@ var phone_front ;
 var gender;
 var id_chk;
 var id_chk2;
+var pswd_chk;
+var pswd_chk2;
+var pswd_again_chk;
+var pswd_again_chk2;
+var email_chk;
+var email_chk2;
+var name_chk;
+var name_chk2;
 
 
 
