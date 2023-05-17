@@ -42,6 +42,10 @@ span + span{
     font-size: 13px;
 }
 
+#email_chk {
+    left : -370px;
+}
+
 /* #pswd_again_chk {
     position: relative;
     left : -139px;
