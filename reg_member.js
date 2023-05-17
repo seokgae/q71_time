@@ -2,7 +2,7 @@ var form;
 var sign_in ;
 var ID;
 var PSWD;
-var PSWD_again ;
+var PSWD_again;
 var namee;
 var email;
 var birthday ;
