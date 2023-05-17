@@ -1,3 +1,6 @@
+form{
+    width : 800px;
+}
 label {
     display: inline-block;
     width : 120px; 
@@ -28,8 +31,19 @@ p {
     width: 80px;
 }
 
-span + span {
+span {
     margin : 5px;
     font-size: 14px;
 }
+
+span + span{
+    position: relative;
+    left : -165px;
+    font-size: 13px;
+}
+
+/* #pswd_again_chk {
+    position: relative;
+    left : -139px;
+} */
 
