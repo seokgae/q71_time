@@ -1,0 +1,29 @@
+label {
+    display: inline-block;
+    width : 120px; 
+    font-size: 14px;
+}
+
+#signin_input > input {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin :0px;
+    margin-top:10px;
+    display: inline-block;
+    width : 120px;
+}
+
+#male, #female {
+    margin-top :3px !important;
+}
+
+#male + label,#female + label {
+    width:auto;
+}
+
+#phone_mid, #phone_end {
+    width: 80px;
+}

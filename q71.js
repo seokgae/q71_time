@@ -14,7 +14,9 @@ window.onload = function(){
     time = document.getElementById('time');
 
     login.addEventListener('click', loginnow);
-    calltime(time);
+    setInterval(calltime, 1);
+    // calltime();
+
 }
 
 function loginnow(){
@@ -25,7 +27,7 @@ function loginnow(){
     
     if (id.value == id_chk && password.value == password_chk){
         alert('로그인 성공!');
-        login_div.innerHTML += id.value +"회원님. 환영합니다!"
+        login_div.innerHTML = id.value +"회원님. 환영합니다!"
     }
     else
         alert('로그인 실패!');
