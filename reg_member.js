@@ -118,12 +118,12 @@ function id_letterchk () {
     const letter = ID.value;
     if(letter.length > 3 && letter.length < 13) {
         id_chk2.style.fontWeight = 'normal';
-        id_chk.innerHTML = `✔  `
+        id_chk.innerHTML = `✔  `;
         id_chk.style.color = '#44d160'; 
         ID.style.backgroundColor = '#dcfbdb';
     }
     else{
-        id_chk.innerHTML = `✖  `
+        id_chk.innerHTML = `✖  `;
         id_chk.style.color = '#e15a5a'; 
         id_chk2.style.fontWeight = 'bold'; 
         ID.style.backgroundColor = '#f9e3e3';
@@ -133,12 +133,12 @@ function pswd_letterchk () {
     const letter = PSWD.value;
     if(letter.length > 3 && letter.length < 13) {
         pswd_chk2.style.fontWeight = 'normal';
-        pswd_chk.innerHTML = `✔  `
+        pswd_chk.innerHTML = `✔  `;
         pswd_chk.style.color = '#44d160'; 
         PSWD.style.backgroundColor = '#dcfbdb';
     }
     else{
-        pswd_chk.innerHTML = `✖  `
+        pswd_chk.innerHTML = `✖  `;
         pswd_chk.style.color = '#e15a5a'; 
         pswd_chk2.style.fontWeight = 'bold'; 
         PSWD.style.backgroundColor = '#f9e3e3';
@@ -148,14 +148,21 @@ function pswd_again_letterchk () {
     const letter = PSWD_again.value;
     if(PSWD.value == PSWD_again.value) {
         pswd_again_chk2.style.fontWeight = 'normal';
-        pswd_again_chk.innerHTML = `✔  `
+        pswd_again_chk.innerHTML = `✔  `;
+        pswd_again_chk.style.left = '-127px';
         pswd_again_chk2.innerHTML = `비밀번호 일치`
         pswd_again_chk.style.color = '#44d160'; 
         PSWD_again.style.backgroundColor = '#dcfbdb';
     }
+    else if(PSWD_again.value == ''){
+        pswd_again_chk.innerHTML = ``;
+        pswd_again_chk2.innerHTML = ``;
+        PSWD_again.style.backgroundColor = 'inherit';
+    }
     else{
-        pswd_again_chk.innerHTML = `✖  `
-        pswd_again_chk2.innerHTML = `비밀번호 불일치`
+        pswd_again_chk.innerHTML = `✖  `;
+        pswd_again_chk.style.left = '-139px';
+        pswd_again_chk2.innerHTML = `비밀번호 불일치`;
         pswd_again_chk.style.color = '#e15a5a'; 
         pswd_again_chk2.style.fontWeight = 'bold'; 
         PSWD_again.style.backgroundColor = '#f9e3e3';
@@ -165,12 +172,12 @@ function email_letterchk () {
     const letter = email.value;
     if(letter.length > 3 && letter.length < 13) {
         email_chk2.style.fontWeight = 'normal';
-        email_chk.innerHTML = `✔  `
+        email_chk.innerHTML = `✔  `;
         email_chk.style.color = '#44d160'; 
         email.style.backgroundColor = '#dcfbdb';
     }
     else{
-        email_chk.innerHTML = `✖  `
+        email_chk.innerHTML = `✖  `;
         email_chk.style.color = '#e15a5a'; 
         email_chk2.style.fontWeight = 'bold'; 
         email.style.backgroundColor = '#f9e3e3';
@@ -180,12 +187,12 @@ function name_letterchk () {
     const letter = namee.value;
     if(letter.length > 3 && letter.length < 13) {
         name_chk2.style.fontWeight = 'normal';
-        name_chk.innerHTML = `✔  `
+        name_chk.innerHTML = `✔  `;
         name_chk.style.color = '#44d160'; 
         namee.style.backgroundColor = '#dcfbdb';
     }
     else{
-        name_chk.innerHTML = `✖  `
+        name_chk.innerHTML = `✖  `;
         name_chk.style.color = '#e15a5a'; 
         name_chk2.style.fontWeight = 'bold'; 
         namee.style.backgroundColor = '#f9e3e3';
